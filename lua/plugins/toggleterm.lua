@@ -3,11 +3,11 @@ return {
   cmd = 'ToogleTerm',
   build = ':ToggleTerm',
   keys = {
-    { '<F4>', '<cmd>ToggleTerm<cr>', desc = 'Toggle floating terminal' },
+    { '<C-\\>', '<cmd>ToggleTerm<cr>', desc = 'Toggle floating terminal' },
   },
   opts = {
     open_mapping = [[<F4>]],
-    direction = 'horizontal',
+    direction = 'float',
     shade_filetypes = {},
     hide_numbers = true,
     insert_mappings = true,
