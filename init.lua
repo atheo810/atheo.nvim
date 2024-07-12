@@ -42,5 +42,6 @@ require('lazy').setup {
   require 'plugins.todo-comments',
   require 'plugins.lualine',
   require 'plugins.treesitter',
+  require 'plugins.toggleterm',
 }
 -- vim: ts=2 sts=2 sw=2 et
