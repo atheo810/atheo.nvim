@@ -67,11 +67,11 @@ return {
 
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
-    vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
+    vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Find help' })
     vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
-    vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-    vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
-    vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
+    vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Search Files' })
+    vim.keymap.set('n', '<leader>fs', builtin.builtin, { desc = 'Find config help' })
+    vim.keymap.set('n', '<leader>fw', builtin.grep_string, { desc = 'Find current Word' })
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
@@ -79,8 +79,8 @@ return {
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
     vim.keymap.set('n', '<leader>bv', '<cmd>vsplit<cr>', { desc = 'Split Window vertically' })
     vim.keymap.set('n', '<leader>bd', '<cmd>bd<cr>', { desc = 'Close Buffer' })
-    vim.keymap.set('n', '<leader>bl', '<cmd>ls<cr>', { desc = 'List Buffer' })
-    vim.keymap.set('n', '<leader>fe', '<cmd>Neotree<cr>', { desc = 'Open Neotree' })
+    vim.keymap.set('n', '<leader>bl', '<cmd>Neotree float buffers<cr>', { desc = 'List Buffer' })
+    vim.keymap.set('n', '<leader>fe', '<cmd>Neotree float reveal<cr>', { desc = 'Open Neotree' })
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
